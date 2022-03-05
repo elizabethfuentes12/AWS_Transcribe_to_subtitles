@@ -1,2 +1,11 @@
-# AWS_Transcribe_to_subtitulos
-With this repo you can generate subtitles and also translate them into the language you want
+# Crea subtitulos en cualquier idioma para cualquier idioma con AWS.
+
+!["Portada"](imagen/portada.png)
+
+## Introducción
+
+## Arquitectura 🤔 ⚙️
+
+!["Diagrama"](imagen/diagrama.jpg)
+
+Revisando arquitecturas me encontré con
