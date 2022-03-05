@@ -1,0 +1,36 @@
+Event: [
+    {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "us-east-1",
+        "eventTime": "2022-03-03T17:36:17.369Z",
+        "eventName": "ObjectCreated:CompleteMultipartUpload",
+        "userIdentity": {
+            "principalId": "AWS:AROA4JJ5LINICHSWWH6RG:elizabeth"
+        },
+        "requestParameters": {
+            "sourceIPAddress": "191.112.156.82"
+        },
+        "responseElements": {
+            "x-amz-request-id": "KYX8W792Y3WDKESE",
+            "x-amz-id-2": "3HhaCV9bIhlGPG82ikionPRMGfBedJQtWsALy0kTT+5sLAIjnBWOXVJudAFdnvm2nalZGVOwZVTv3aTRuIH9L93kah4JV8T7"
+        },
+        "s3": {
+            "s3SchemaVersion": "1.0",
+            "configurationId": "YTgwYzUxM2MtNjkyOC00OWNjLWEzMTctMWUzNzM3NTViNTdj",
+            "bucket": {
+                "name": "cdkcodestack-videobucket3134be12-x4wg6s68d1nj",
+                "ownerIdentity": {
+                    "principalId": "A2WBUM2GOVT6XK"
+                },
+                "arn": "arn:aws:s3:::cdkcodestack-videobucket3134be12-x4wg6s68d1nj"
+            },
+            "object": {
+                "key": "prueba.mp4",
+                "size": 21580779,
+                "eTag": "718842ab0ca1f161be1c1d2b0a790310-2",
+                "sequencer": "006220FC7F900932C2"
+            }
+        }
+    }
+]

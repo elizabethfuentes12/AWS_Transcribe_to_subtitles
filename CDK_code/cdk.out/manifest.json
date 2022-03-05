@@ -1,0 +1,166 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkCodeStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "CdkCodeStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "CdkCodeStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkCodeStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/54115db5ddbe7a05aefc3fb5890024f12e455dca58f8e7f2c8caa62178515766.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "CdkCodeStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "CdkCodeStack.assets"
+      ],
+      "metadata": {
+        "/CdkCodeStack/video-bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "videobucket3134BE12"
+          }
+        ],
+        "/CdkCodeStack/video-bucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "videobucketNotificationsFDB561F8"
+          }
+        ],
+        "/CdkCodeStack/video-bucket/AllowBucketNotificationsToCdkCodeStacklambdainvokestranscribeAD85308C": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "videobucketAllowBucketNotificationsToCdkCodeStacklambdainvokestranscribeAD85308CC0627B60"
+          }
+        ],
+        "/CdkCodeStack/input_transcribe/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inputtranscribeDB6FAC20"
+          }
+        ],
+        "/CdkCodeStack/input_transcribe/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inputtranscribeNotifications2115E889"
+          }
+        ],
+        "/CdkCodeStack/input_transcribe/AllowBucketNotificationsToCdkCodeStacklambdaprocesstranscribe073693C3": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inputtranscribeAllowBucketNotificationsToCdkCodeStacklambdaprocesstranscribe073693C33F3643E3"
+          }
+        ],
+        "/CdkCodeStack/output_transcribe/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "outputtranscribe7AA6C3EF"
+          }
+        ],
+        "/CdkCodeStack/lambda_invokes_transcribe/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdainvokestranscribeServiceRole3811026B"
+          }
+        ],
+        "/CdkCodeStack/lambda_invokes_transcribe/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdainvokestranscribeServiceRoleDefaultPolicy2D36F0A4"
+          }
+        ],
+        "/CdkCodeStack/lambda_invokes_transcribe/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdainvokestranscribe47D9D063"
+          }
+        ],
+        "/CdkCodeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/CdkCodeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/CdkCodeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/CdkCodeStack/lambda_process_transcribe/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaprocesstranscribeServiceRole9C8051D4"
+          }
+        ],
+        "/CdkCodeStack/lambda_process_transcribe/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaprocesstranscribeServiceRoleDefaultPolicy596D0F3A"
+          }
+        ],
+        "/CdkCodeStack/lambda_process_transcribe/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaprocesstranscribe4BEB2F09"
+          }
+        ],
+        "/CdkCodeStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/CdkCodeStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/CdkCodeStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/CdkCodeStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "CdkCodeStack"
+    }
+  }
+}
