@@ -9,7 +9,7 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "constructs.Construct",
-          "version": "10.0.76"
+          "version": "10.1.42"
         }
       },
       "CdkCodeStack": {
@@ -47,7 +47,7 @@
                 },
                 "constructInfo": {
                   "fqn": "constructs.Construct",
-                  "version": "10.0.76"
+                  "version": "10.1.42"
                 }
               },
               "AllowBucketNotificationsToCdkCodeStacklambdainvokestranscribeAD85308C": {
@@ -117,7 +117,7 @@
                 },
                 "constructInfo": {
                   "fqn": "constructs.Construct",
-                  "version": "10.0.76"
+                  "version": "10.1.42"
                 }
               },
               "AllowBucketNotificationsToCdkCodeStacklambdaprocesstranscribe073693C3": {
@@ -380,7 +380,7 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "5e0ce1654e9cb4e58181e307f56e57d89ced9fbfbf164772a143bc739b4e06be.zip"
+                      "s3Key": "a8c8a6b8a4a935cee2d924e4201d2e6781db97ee088cf8ba005c92890113842d.zip"
                     },
                     "role": {
                       "Fn::GetAtt": [
@@ -518,7 +518,7 @@
             },
             "constructInfo": {
               "fqn": "constructs.Construct",
-              "version": "10.0.76"
+              "version": "10.1.42"
             }
           },
           "lambda_process_transcribe": {
@@ -782,7 +782,7 @@
             },
             "constructInfo": {
               "fqn": "constructs.Construct",
-              "version": "10.0.76"
+              "version": "10.1.42"
             }
           }
         },
