@@ -285,7 +285,7 @@
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
           },
-          "S3Key": "5e0ce1654e9cb4e58181e307f56e57d89ced9fbfbf164772a143bc739b4e06be.zip"
+          "S3Key": "a8c8a6b8a4a935cee2d924e4201d2e6781db97ee088cf8ba005c92890113842d.zip"
         },
         "Role": {
           "Fn::GetAtt": [
@@ -314,7 +314,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "CdkCodeStack/lambda_invokes_transcribe/Resource",
-        "aws:asset:path": "asset.5e0ce1654e9cb4e58181e307f56e57d89ced9fbfbf164772a143bc739b4e06be",
+        "aws:asset:path": "asset.a8c8a6b8a4a935cee2d924e4201d2e6781db97ee088cf8ba005c92890113842d",
         "aws:asset:is-bundled": false,
         "aws:asset:property": "Code"
       }
