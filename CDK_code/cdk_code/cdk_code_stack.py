@@ -17,7 +17,7 @@ class CdkCodeStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         REGION_NAME = 'us-east-1'
-        email="elizabethfuentes12@gmail.com"
+        email="YOUR-EMAIL"
         SOURCE_LANG_CODE = 'es-ES'
         TARGET_LANG_CODE = 'en-US'
 
