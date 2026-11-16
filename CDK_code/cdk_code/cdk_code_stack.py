@@ -46,7 +46,7 @@ class CdkCodeStack(Stack):
         lambda_invokes_transcribe= aws_lambda.Function(self, "lambda_invokes_transcribe",
                                     handler = "lambda_function.lambda_handler",
                                     timeout = Duration.seconds(300),
-                                    runtime = aws_lambda.Runtime.PYTHON_3_8,
+                                    runtime = aws_lambda.Runtime.PYTHON_3_13,
                                     memory_size = 256, description = "Lambda que invoca Amazon transcribe",
                                     code = aws_lambda.Code.from_asset("./lambda_invokes_transcribe"),
                                     environment = {
@@ -76,7 +76,7 @@ class CdkCodeStack(Stack):
         lambda_process_transcribe= aws_lambda.Function(self, "lambda_process_transcribe",
                                     handler = "lambda_function.lambda_handler",
                                     timeout = Duration.seconds(300),
-                                    runtime = aws_lambda.Runtime.PYTHON_3_8,
+                                    runtime = aws_lambda.Runtime.PYTHON_3_13,
                                     memory_size = 256, description = "Lambda que procesa el SRT entregado por amazon transcribe y traduce su contenido",
                                     code = aws_lambda.Code.from_asset("./lambda_process_transcribe"),
                                     environment = {
